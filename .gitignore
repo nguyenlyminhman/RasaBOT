@@ -1,1 +1,14 @@
+# Python files
+venv
 .rasa
+
+# Rasa files
+# exclude everything from models folder
+models/*
+# except for .gitkeep, so that folder itself is included
+!models/20240803-124725-local-cabin.tar.gz
+results
+story_graph.dot
+
+# keep secret keys out of VCS
+.env
